@@ -7,6 +7,7 @@ class SongsController < ApplicationController
   end
 
   def show
+    authorize! :read, @song
   end
 
   def new
